@@ -117,7 +117,7 @@ export default function BuyItem({ item, scanUrl, user }: BuyItemProps) {
     <div className="flex max-w-full flex-col">
       <div>
         <Button
-          color="primary"
+          color="warning"
           onClick={onOpen}
           type="button"
         >
@@ -149,7 +149,7 @@ export default function BuyItem({ item, scanUrl, user }: BuyItemProps) {
                   <Button color="danger" variant="flat" onPress={close}>
                     Cancel
                   </Button>
-                  <Button isLoading={isLoading} color="primary" onPress={buy}>
+                  <Button isLoading={isLoading} color="warning" onPress={buy}>
                     Buy
                   </Button>
                 </ModalFooter>

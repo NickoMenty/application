@@ -10,7 +10,7 @@ import { login } from '@/app/auth/login/actions';
 function SubmitButton() {
   const { pending } = useFormStatus();
 
-  return <Button isLoading={pending} type="submit" color="primary" fullWidth>Sign In</Button>;
+  return <Button isLoading={pending} type="submit" color="warning" fullWidth>Sign In</Button>;
 }
 
 export default function LoginForm() {

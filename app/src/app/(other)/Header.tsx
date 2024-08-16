@@ -11,11 +11,12 @@ import { LOGIN, REGISTER } from '@/constants/navigation';
 export default async function Header() {
   const user = await getPayload();
   return (
-    <Navbar isBordered>
+    // MY STYLING - FELL FREE TO DELETE
+    <Navbar isBordered style={{ backgroundColor: '#fc7703' }}> 
       <NavbarBrand>
         <Link href="/" className="flex text-black">
-          <span>Logo</span>
-          <p className="font-bold text-inherit">Name</p>
+          <span className="text-white">Rent</span>
+          <p className="font-bold text-inherit">Dar</p>
         </Link>
       </NavbarBrand>
 
@@ -24,10 +25,10 @@ export default async function Header() {
       ) : (
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
-            <Link href={LOGIN}>Login</Link>
+            <Link href={LOGIN} className="text-white">Login</Link>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} href={REGISTER} color="primary" variant="flat">
+            <Button as={Link} href={REGISTER} color="default" variant="flat">
               Sign Up
             </Button>
           </NavbarItem>

@@ -11,7 +11,7 @@ import { register } from '@/app/auth/register/actions';
 function SubmitButton() {
   const { pending } = useFormStatus();
 
-  return <Button isLoading={pending} type="submit" color="primary" fullWidth>Sign Up</Button>;
+  return <Button isLoading={pending} type="submit" color="warning" fullWidth>Sign Up</Button>;
 }
 
 export default function RegisterForm() {

@@ -26,7 +26,7 @@ export default function UserNav({ user }: UserNavProps) {
             isBordered
             as="button"
             className="transition-transform"
-            color="primary"
+            color="warning"
             name={`${user.firstName[0]}${user.lastName[0]}`}
             size="sm"
           />

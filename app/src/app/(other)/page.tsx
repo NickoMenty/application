@@ -17,7 +17,7 @@ function getData(): Promise<Item[]> {
 export default async function Catalog() {
   const items = await getData();
   return (
-    <div className="flex items-center justify-center p-4">
+    <div className="flex items-center justify-center p-4"> 
       <div className="my-auto grid max-w-7xl grid-cols-1 gap-5 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {items.map((item) => (
           <Link

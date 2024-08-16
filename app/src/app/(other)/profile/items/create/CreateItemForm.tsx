@@ -13,7 +13,7 @@ function CreateButton() {
   return (
     <Button
       isLoading={pending}
-      color="primary"
+      color="warning"
       type="submit"
     >
       Create
