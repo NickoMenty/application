@@ -6,3 +6,5 @@
 
 # environment
 .env
+
+node_modules
